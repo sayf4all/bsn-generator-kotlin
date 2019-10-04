@@ -15,7 +15,7 @@ class BsnController(private val bsnService: BsnService) {
         return bsnService.isGeldigBSN(bsnnummer)
     }
 
-	@GetMapping("/generate")
+    @GetMapping("/generate")
     fun generate(): String {
         return bsnService.getRandomBsn()
     }
