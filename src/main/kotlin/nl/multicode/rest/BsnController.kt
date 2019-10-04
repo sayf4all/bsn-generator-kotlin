@@ -16,7 +16,7 @@ class BsnController(private val bsnService: BsnService) {
     }
 
 	@GetMapping("/generate")
-    fun validate(): String {
+    fun generate(): String {
         return bsnService.getRandomBsn()
     }
 }
